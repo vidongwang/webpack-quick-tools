@@ -1,0 +1,9 @@
+/* common.css */
+body{
+    background: pink;
+    color: yellowgreen;
+}
+#pic{
+    background-image: url('../images/wx.png');
+    width:60px;height:60px;
+}

@@ -1,0 +1,9 @@
+/* app.scss */
+$nav-color: #fff;
+#nav {
+    $width: 50%;
+    width: $width;
+    height: 30px;
+    background-color: $nav-color;
+    
+}
