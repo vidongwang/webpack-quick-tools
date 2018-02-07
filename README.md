@@ -65,7 +65,7 @@ document.getElementById('title').innerHTML='Hello Webpack';
 1. 在终端安装 `cnpm i webpack-dev-server --save-dev`
 2. 配置好后执行 webpack-dev-server，这时候会报错，只需要在package.json里配置下scripts就可以了
 
-```json
+```js
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js --progress --display-modules --colors --display-reasons"
@@ -80,7 +80,7 @@ document.getElementById('title').innerHTML='Hello Webpack';
 6. --watch 监听文件变化，进行自动打包
 
 3. npm安装好后，需要配置下devServer服务
-```json
+```js
 devServer: {
     "contentBase": path.resolve(__dirname,"dist"),
     "host": "0.0.0.0",
@@ -107,7 +107,7 @@ body{
 2. css文件新建好后，需要引入到入口文件app.js中
 3. 在终端安装`cnpm i style-loader --save-dev` 、`cnpm i css-loader --save-dev`
 4. 安装好后，在webpack.config.js中进行配置
-```json
+```js
 module:{
     "rules": [
         {
