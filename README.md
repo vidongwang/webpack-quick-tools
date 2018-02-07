@@ -81,17 +81,17 @@ document.getElementById('title').innerHTML='Hello Webpack';
 
 3. npm安装好后，需要配置下devServer服务
 ```json
-{
-    'contentBase': path.resolve(__dirname,'dist'),
-    'host': '0.0.0.0',
-    'compress': true,
-    'port': '8080',
-    'overlay': {
-        'errors': true,
+devServer: {
+    "contentBase": path.resolve(__dirname,"dist"),
+    "host": "0.0.0.0",
+    "compress": true,
+    "port": "8080",
+    "overlay": {
+        "errors": true,
     },
-    // open: true,
-    // historyFallback: {},
-    'hot': true
+    // "open": true,
+    // "historyFallback": {},
+    "hot": true
 }
 ```
 4. 配置好后，在终端执行`npm run server`，到浏览器地址中输入127.0.0.1:8080，可看到效果，并实现热更新。
@@ -108,11 +108,11 @@ body{
 3. 在终端安装`cnpm i style-loader --save-dev` 、`cnpm i css-loader --save-dev`
 4. 安装好后，在webpack.config.js中进行配置
 ```json
- module:{
-    'rules': [
+module:{
+    "rules": [
         {
-            'test': '/\.css$/',
-            'use': [ 'style-loader', 'css-loader' ]
+            "test": "/\.css$/",
+            "use": [ "style-loader", "css-loader" ]
         }
     ]
 },
